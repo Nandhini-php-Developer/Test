@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>John Doe - Web Developer</title>
+    <style>
+        body {
+            font-family: 'Open Sans', sans-serif;
+            color: #fff;
+            background-color: #222;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            padding: 20px;
+        }
+        h1, h2, h3 {
+            color: #fff;
+        }
+        .header {
+            background: linear-gradient(to right, #333, #444);
+            padding: 30px;
+            border-bottom: 2px solid #F9950B;
+            text-align: center;
+        }
+        .header h1 {
+            font-size: 3em;
+        }
+        .header p {
+            font-size: 1.5em;
+        }
+        .download-button {
+            display: block;
+            width: 200px;
+            height: 50px;
+            margin: 20px auto;
+            background-color: #F9950B;
+            color: #fff;
+            text-align: center;
+            line-height: 50px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        .download-button:hover {
+            background-color: #F9950B;
+            opacity: 0.8;
+        }
+        .header h1 {
+            margin: 0;
+            font-size: 2.5em;
+            color: #fff;
+        }
+        .header p {
+            margin: 10px 0;
+            font-size: 1.2em;
+            color: #ccc;
+        }
+        .section {
+            margin-bottom: 20px;
+        }
+        .section h2 {
+            border-bottom: 3px solid #F9950B;
+            font-size: 20px;
+            margin-top: 30px;
+            padding-bottom: 5px;
+            display: inline-block;
+            color: #fff;
+            font-weight: 600;
+        }
+        .section p {
+            margin-bottom: 5px;
+            color: #ccc;
+        }
+        .skills {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        .skill-item {
+            width: 47%;
+            margin-bottom: 20px;
+            padding: 10px;
+            background-color: #333;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+        .skill-item:hover {
+            transform: scale(1.05);
+        }
+        .skill-item h3 {
+            margin: 10px 0;
+            font-size: 1.2em;
+            color: #fff;
+        }
+        .skill-item p {
+            margin: 0;
+            font-size: 0.9em;
+            color: #ccc;
+        }
+        @media screen and (max-width: 600px) {
+            .container {
+                width: 95%;
+            }
+            .skill-item {
+                width: 100%;
+            }
+        }
+    </style>
+    <!-- html2canvas library -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.3.3/html2canvas.min.js"></script>
+
+<!-- jsPDF library -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.3.1/jspdf.umd.min.js"></script>
+    <script>
+     
+
+    function downloadPdf() {
+        window.print();
+    }
+
+    </script>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>John Doe</h1>
+            <p>Web Developer | UI/UX Designer</p>
+        </div>
+
+        <div class="section">
+            <h2>About Me</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed odio lacus, sollicitudin in dolor at, consequat volutpat ante.</p>
+        </div>
+
+        <div class="section">
+            <h2>Work Experience</h2>
+            <h3>Senior Web Developer</h3>
+            <p>Company Name, 2016-2020</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
+
+        <div class="section">
+            <h2>Education</h2>
+            <h3>Bachelor of Science in Computer Science</h3>
+            <p>University Name, 2001-2004</p>
+        </div>
+
+        <div class="section">
+            <h2>Skills</h2>
+            <div class="skills">
+                <div class="skill-item">
+                    <h3>HTML & CSS</h3>
+                    <p>Advanced knowledge in HTML5 and CSS3, with a focus on responsive design and cross-browser compatibility.</p>
+                </div>
+                <div class="skill-item">
+                    <h3>JavaScript</h3>
+                    <p>Proficient in JavaScript, including ES6 features, and frameworks such as React and Vue.js.</p>
+                </div>
+                <div class="skill-item">
+                    <h3>UI/UX Design</h3>
+                    <p>Experience in designing user-friendly interfaces and user experiences, with a focus on accessibility and usability.</p>
+                </div>
+                <!-- Add more skill items as needed -->
+            </div>
+        </div>
+        <!-- <a href="path/to/yourfile.pdf" download="filename.pdf">Download PDF</a> -->
+
+        <a  href="#" onclick="downloadPdf()">Download</a>
+        <div class="section">
+            <h2>Contact</h2>
+            <p>Email: john.doe@example.com</p>
+            <p>LinkedIn: <a href="https://www.linkedin.com/in/johndoe">linkedin.com/in/johndoe</a></p>
+            <p>GitHub: <a href="https://github.com/johndoe">github.com/johndoe</a></p>
+        </div>
+    </div>
+</body>
+</html>
