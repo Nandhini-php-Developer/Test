@@ -6,10 +6,20 @@ body {
     padding: 0;
 }
 .container {
-    width: 80%;
+    width: 90%;
     margin: auto;
     padding: 20px;
 }
+
+.profile-image {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 5px solid #F9950B;
+    object-fit: cover;
+    margin-bottom: 20px;
+}
+
 h1, h2, h3 {
     color: #fff;
 }
