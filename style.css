@@ -1,0 +1,105 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+    color: #fff;
+    background-color: #222;
+    margin: 0;
+    padding: 0;
+}
+.container {
+    width: 80%;
+    margin: auto;
+    padding: 20px;
+}
+h1, h2, h3 {
+    color: #fff;
+}
+.header {
+    background: linear-gradient(to right, #333, #444);
+    padding: 30px;
+    border-bottom: 2px solid #F9950B;
+    text-align: center;
+}
+.header h1 {
+    font-size: 3em;
+}
+.header p {
+    font-size: 1.5em;
+}
+.download-button {
+    display: block;
+    width: 200px;
+    height: 50px;
+    margin: 20px auto;
+    background-color: #F9950B;
+    color: #fff;
+    text-align: center;
+    line-height: 50px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.download-button:hover {
+    background-color: #F9950B;
+    opacity: 0.8;
+}
+.header h1 {
+    margin: 0;
+    font-size: 2.5em;
+    color: #fff;
+}
+.header p {
+    margin: 10px 0;
+    font-size: 1.2em;
+    color: #ccc;
+}
+.section {
+    margin-bottom: 20px;
+}
+.section h2 {
+    border-bottom: 3px solid #F9950B;
+    font-size: 20px;
+    margin-top: 30px;
+    padding-bottom: 5px;
+    display: inline-block;
+    color: #fff;
+    font-weight: 600;
+}
+.section p {
+    margin-bottom: 5px;
+    color: #ccc;
+}
+.skills {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.skill-item {
+    width: 47%;
+    margin-bottom: 20px;
+    padding: 10px;
+    background-color: #333;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+.skill-item:hover {
+    transform: scale(1.05);
+}
+.skill-item h3 {
+    margin: 10px 0;
+    font-size: 1.2em;
+    color: #fff;
+}
+.skill-item p {
+    margin: 0;
+    font-size: 0.9em;
+    color: #ccc;
+}
+
+@media screen and (max-width: 600px) {
+    .container {
+        width: 95%;
+    }
+    .skill-item {
+        width: 100%;
+    }
+}
