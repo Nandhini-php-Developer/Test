@@ -10,7 +10,6 @@ body {
     margin: auto;
     padding: 20px;
 }
-
 .profile-image {
     width: 150px;
     height: 150px;
@@ -20,7 +19,6 @@ body {
     margin-bottom: 20px;
     box-shadow: -6px -6px 10px rgba(255, 255, 255, 0.45), 6px 6px 10px rgba(94, 104, 121, 0.2);
 }
-
 h1, h2, h3 {
     color: #fff;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
@@ -98,7 +96,6 @@ h1, h2, h3 {
 .skill-item:hover {
     transform: scale(1.05);
 }
-
 .skill-item h3 {
     margin: 10px 0;
     font-size: 1.2em;
@@ -109,7 +106,6 @@ h1, h2, h3 {
     font-size: 0.9em;
     color: #ccc;
 }
-
 @media screen and (max-width: 600px) {
     .container {
         width: 95%;
